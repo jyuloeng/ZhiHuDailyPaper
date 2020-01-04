@@ -1,0 +1,2 @@
+include ':app', ':lib_sweet_dialog', 'lib_picture'
+rootProject.name='ZhiHuDailyPaper'

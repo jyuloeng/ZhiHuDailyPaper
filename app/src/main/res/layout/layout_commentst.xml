@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_avatar"
+        tools:src="@mipmap/ic_launcher1"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        tools:text="momo不说话了"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_copy"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@mipmap/ic_more"
+        android:layout_alignParentRight="true">
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_content"
+        tools:text="大美洲欢庆双十一 全境包邮（阿拉斯加，夏威夷除外）"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_below="@+id/tv_author"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:minHeight="0dp"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="// 两只小飞机：新版知乎日报好差啊"
+        />
+
+    <RelativeLayout
+        android:layout_below="@+id/tv_reply"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#999999"
+            android:textSize="13sp"
+            tools:text="2011-11-03 21:22"
+            android:maxWidth="226dp"/>
+
+        <TextView
+            android:id="@+id/tv_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_toLeftOf="@+id/btn_likes"
+            tools:text="11" />
+        <Button
+            android:background="@mipmap/ic_dianzan"
+            android:id="@+id/btn_likes"
+            android:layout_width="14dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/btn_comment"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="15dp"
+            android:gravity="top"/>
+        <Button
+            android:id="@+id/btn_comment"
+            android:background="@mipmap/ic_pinglun"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="1dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

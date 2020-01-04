@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.NewInfoActivity"
+    android:fitsSystemWindows="true">
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@mipmap/ic_back"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:text="|"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:textColor="#515151"
+            android:layout_height="match_parent"/>
+        <com.odd.zhihudailypaper.Controls.BottomButton
+            android:id="@+id/bar_pinglun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        <com.odd.zhihudailypaper.Controls.BottomButton
+            android:id="@+id/bar_dianzan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        <com.odd.zhihudailypaper.Controls.BottomButton
+            android:id="@+id/bar_shoucang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+        <com.odd.zhihudailypaper.Controls.BottomButton
+            android:id="@+id/bar_quxiaoshoucang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.odd.zhihudailypaper.Controls.BottomButton
+            android:id="@+id/bar_fenxiang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
